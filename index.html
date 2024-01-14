@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="agecalc.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/ageStyle.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="whole_container">
+  <form>
+  <div class="first_cont">
+    <div class="cont">
+    <label for="day">DAY</label>
+    <input type="number" id="day" placeholder="DD">
+    <small id="errorDay"></small>
+  </div>
+  <div class="cont">
+    <label for="month">MONTH</label>
+    <input type="number" id="month" placeholder="MM">
+    <small id="errorMonth"></small>
+  </div>
+  <div class="cont">
+    <label for="year">YEAR</label>
+    <input type="number" id="year" placeholder="YY">
+    <small id="errorYear"></small>
+    </div>
+  </div>
+  <div class="submit_cont">
+    <hr/>
+  <button class="submit"><img src="assets/images/icon-arrow.svg" alt=""></button>
+</div>
+</form>
+<div class="result">
+  <h1><span id="realYear">--</span>Years</h1>
+  <h1><span id="realMonth">--</span>Months</h1>
+  <h1><span id="realDay">--</span>Days</h1>
+</div>
+
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rukundo Ed Samuel</a>.
+  </div>
+</body>
+</html>

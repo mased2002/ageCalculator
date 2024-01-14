@@ -1,0 +1,119 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 86%);
+    margin: 20px;
+    /* min-width: 100vh; */
+}
+.whole_container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5%;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 1rem 1rem 10rem 1rem;
+}
+.first_cont{
+    display: flex;
+    gap: 14px;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+}
+.cont label{
+    font-size: 10px;
+    color: grey;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.cont input{
+    height: 15px;
+    padding: 20px 10px;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.604);
+}
+.submit_cont{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+hr{
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+  }
+.submit{
+    border-radius: 50%;
+    background-color:  hsl(259, 100%, 65%);
+    border: none;
+    padding: 5px;
+}
+/* to the result */
+.result h1{
+    font-size: 62px;
+    font-weight: 800;
+    font-style: italic;
+    height: fit-content;
+}
+.result span{
+    color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width:700px) {
+    .whole_container{
+        width: 80%;
+        padding: 10px;
+    }
+    body{
+        margin: 10px;
+    }
+    .cont input{
+        font-size: 20px;
+        width: 40px;
+        padding: 20px 5px;
+    }
+    .first_cont{
+        margin-bottom: 40px;
+        gap: 0;
+        justify-content: space-around;
+    }
+    .submit_cont{
+        position: relative;
+        justify-content: center;
+    }
+    .submit{
+        position: absolute;
+    }
+    .result h1{
+        font-size: 52px;
+    }
+}
+small{
+    font-size: 10px;
+    color: red;
+}
+/* class to add to error */
+.error_bords{
+    border: 1px solid red;
+    color: red;
+}
+.cont .error-input{
+    border: 1px solid rgba(255, 0, 0, 0.77) ;
+}
+.cont .error-label{
+    color: red;
+}
